@@ -15,3 +15,13 @@ const homeheight = home.offsetHeight;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeheight;
 });
+
+//Arrow를 아래로 스크롤시 나타나게 처리함
+const arrow = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeheight / 2) {
+    arrow.style.opacity = 1;
+  } else {
+    arrow.style.opacity = 0;
+  }
+});
