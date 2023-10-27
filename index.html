@@ -35,7 +35,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <!--Javascript-->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
   </head>
   <body>
     <!--Header-->
@@ -218,28 +219,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-filter="all">
                 ALL <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-filter="front-end">
+                짱구 <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">3</span>
+              <button class="category" data-filter="back-end">
+                짱아 <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Mobile <span class="category__count">2</span>
+              <button class="category" data-filter="mobile">
+                흰둥이 <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/1.jpg"
@@ -253,7 +254,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/2.jpg"
@@ -267,7 +268,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/3.jpg"
@@ -281,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/4.jpg"
@@ -295,7 +296,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="./images/5.jpg"
@@ -309,7 +310,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="./images/6.jpg"
@@ -323,7 +324,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/7.jpg"
@@ -337,7 +338,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/8.jpg"
